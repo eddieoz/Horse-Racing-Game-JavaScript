@@ -7,6 +7,8 @@ Date: 30/04/17
 
 body {background-image: url(images/bg.png); margin: 0; padding: 0; font-family: calibri, sans-serif;}
 
+.title {position: absolute; margin-top: -200px; margin-left: -300px; width: 500px}
+
 
 aside {display: none; width: 200px; position: fixed; height: 100vh; left: 100%; margin-left: -240px; background-color: #ddd; border-left: 5px solid #bbb; padding: 20px;}
 #closeside {float: right; font-weight: bold; cursor: pointer;}
@@ -441,14 +443,20 @@ opacity: 0.7;
 }
 
 #funds {font-weight: bold;}
-#funds:before {content: "£";}
+#funds:before {content: "$";}
 
 label, input, select {float:  left; display: block; width: 8vw; margin-bottom: 0.5vh;}
 label {clear: left;}
 
-#results {width: auto; position: absolute; margin-top: 8vh; margin-left: 48vw;}
+/* #results {width: auto; position: absolute; margin-top: 8vh; margin-left: 48vw;}
 #results td {height: 30px; width: 30px; background-repeat: no-repeat; background-position: 0px -64px;}
 #results .horse1 { background-image: url(images/head0.png);}
 #results .horse2 {  background-image: url(images/head4.png);}
 #results .horse3 {  background-image: url(images/head1.png);}
-#results .horse4 {  background-image: url(images/head2.png);}
+#results .horse4 {  background-image: url(images/head2.png);} */
+#results {width: auto; position: absolute; margin-top: 8vh; margin-left: 45vw;}
+#results td {height: 32px; width: 35px; background-repeat: no-repeat; background-position: -10px -74px;}
+#results .horse1 { 	background-image: url(images/horse2.png);}
+#results .horse2 {  background-image: url(images/horse3.png);}
+#results .horse3 {  background-image: url(images/horse1.png);}
+#results .horse4 {  background-image: url(images/horse4.png);}

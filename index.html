@@ -11,7 +11,8 @@ Date: 30/04/17
     <meta charset="utf-8">
     <title>Horse Racing</title>
     <link rel="stylesheet" href="game.css" />
-    <script src="game.js"></script>
+    <script type="text/javascript" src="key.json"></script>
+    <script type="text/javascript" src="game.js"></script>
 </head>
 
 <body>
@@ -63,20 +64,32 @@ Date: 30/04/17
             <button id="start">Start Race</button><!-- Make it a button -->
 
             <div id="bet">
-                <p>You currently have <span id="funds">100</span></p>
-                <label>Bet Amount (£)</label>
-                <input type="number" id="amount" value="0"><!-- Add type and default value -->
-                <label>Bet on horse:</label>
+                <p>Lap #: <span id="lap">0</span></p>
+                <!-- <p>You currently have <span id="funds">100</span></p>
+                <label>Bet Amount ($)</label>
+                <input type="number" id="amount" value="0">Add type and default value -->
+                <!-- <label>Select horse:</label>
                 <select id="bethorse">
                     <option value="1">White</option>
                     <option value="2">Blue</option>
                     <option value="3">Green</option>
                     <option value="4">Brown</option>
-                </select>
-                <label>Number of lap</label><!-- Add Number of Laps -->
+                </select> -->
+                <label>White:</label>
+                <select id="horse1coin"></select>
+                <label>Blue:</label>
+                <select id="horse2coin"></select>
+                <label>Green:</label>
+                <select id="horse3coin"></select>
+                <label>Brown:</label>
+                <select id="horse4coin"></select>
+                <label>Number of laps</label><!-- Add Number of Laps -->
                 <input type="number" id="num_lap" name="num_lap" value="1"><!-- Number of Laps text box to get number of Laps -->
+                
             </div>
+
             <img src="images/tree.png" class="tree" />
+            <img src="images/title.png" class="title" />
             <br>
             <table id="results">
                 <thead>
@@ -87,19 +100,19 @@ Date: 30/04/17
                 </thead>
                 <tbody>
                     <tr>
-                        <td>1st</td>
+                        <td class="position">1st</td>
                         <td class="result horse1"></td>
                     </tr>
                     <tr>
-                        <td>2nd</td>
+                        <td class="position">2nd</td>
                         <td class="result horse2"></td>
                     </tr>
                     <tr>
-                        <td>3rd</td>
+                        <td class="position">3rd</td>
                         <td class="result horse3"></td>
                     </tr>
                     <tr>
-                        <td>4th</td>
+                        <td class="position">4th</td>
                         <td class="result horse4"></td>
                     </tr>
                 </tbody>
