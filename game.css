@@ -1,8 +1,11 @@
 /*
 Assignment: Javascript Assignment
-Filename: game.css
+Filename: game.html
 @author: KITSANTAS FOTIOS (17421808)
 Date: 30/04/17
+
+Updated: Shitcoin Horse Racing by @eddieoz
+Date: 25/05/2022
 */
 
 body {background-image: url(images/bg.png); margin: 0; padding: 0; font-family: calibri, sans-serif;}
@@ -448,12 +451,6 @@ opacity: 0.7;
 label, input, select {float:  left; display: block; width: 8vw; margin-bottom: 0.5vh;}
 label {clear: left;}
 
-/* #results {width: auto; position: absolute; margin-top: 8vh; margin-left: 48vw;}
-#results td {height: 30px; width: 30px; background-repeat: no-repeat; background-position: 0px -64px;}
-#results .horse1 { background-image: url(images/head0.png);}
-#results .horse2 {  background-image: url(images/head4.png);}
-#results .horse3 {  background-image: url(images/head1.png);}
-#results .horse4 {  background-image: url(images/head2.png);} */
 #results {width: auto; position: absolute; margin-top: 8vh; margin-left: 45vw;}
 #results td {height: 32px; width: 35px; background-repeat: no-repeat; background-position: -10px -74px;}
 #results .horse1 { 	background-image: url(images/horse2.png);}
