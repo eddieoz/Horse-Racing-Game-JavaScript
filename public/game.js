@@ -29,7 +29,7 @@ function getKey(){
 
 function getCoins(){
 	const Http = new XMLHttpRequest();
-	const url='https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest?CMC_PRO_API_KEY='+cmcKey;
+	const url='/proxy?url=https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest?CMC_PRO_API_KEY='+cmcKey;
 	Http.overrideMimeType("application/json");
 	Http.open("GET", url);
 	Http.setRequestHeader('Access-Control-Allow-Origin','*');
@@ -68,7 +68,7 @@ function getCoins(){
 
 function getSpeed(horse,coin){
 	const Http = new XMLHttpRequest();
-	const url='https://pro-api.coinmarketcap.com/v2/cryptocurrency/quotes/latest?symbol='+coin+'&CMC_PRO_API_KEY='+cmcKey;
+	const url='/proxy?url=https://pro-api.coinmarketcap.com/v2/cryptocurrency/quotes/latest?symbol='+coin+'&CMC_PRO_API_KEY='+cmcKey;
 	Http.overrideMimeType("application/json");
 	Http.open("GET", url);
 	Http.setRequestHeader('Access-Control-Allow-Origin','*');
